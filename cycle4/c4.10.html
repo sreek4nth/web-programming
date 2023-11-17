@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+body
+{
+	background-color:red;
+	text-align:center;
+}
+h2
+{
+	color:white;
+}
+</style>
+</head>
+<body id="changeColorDiv">
+<h2 id="heading"><u>Change the color of background by just clicking on the button</u></h2>
+<button onClick="myFunction()">Click Me!</button>
+
+<script>
+function myFunction()
+{
+	var heading = document.getElementById("heading");
+        heading.style.color = "white";
+	var colors = ['#ff0000', '#00ff00', '#0000ff'];
+	var randomColor = colors[Math.floor(Math.random() * colors.length)];
+	var changeColorDiv = document.getElementById('changeColorDiv');
+	changeColorDiv.style.backgroundColor = randomColor;
+	colorButton.style.backgroundColor="yellow";
+        colorButton.style.color="black";
+}
+</script>
+</body>
+</html>
